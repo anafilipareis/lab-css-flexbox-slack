@@ -8,3 +8,288 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+html {
+  box-sizing: border-box;
+}
+
+
+body { 
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  background-color: #540B51; 
+  color: #ffffff; 
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  background-color: #540B51;
+}
+
+nav img {
+  height: 32px;
+  background-color: transparent;
+  color: white;
+}
+
+
+#menu-default {
+  display: flex;
+  align-items: center;
+}
+
+.nav-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  ul.hidden, .menu-list  {
+      display: none;
+  }
+}
+
+h1 {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+
+header div {
+  background-color: #540B51
+}
+
+header p {
+  background: linear-gradient(to right, #ECB12F 45%, #fff 20%);
+  color: transparent;
+  -webkit-background-clip: text; /* Specifies that the background of the element should be clipped to the text. In this case, the background gradient is only visible where the text is present. */
+  text-align: center;
+  font-weight: 550;
+  width: 100%;
+}
+
+
+.button-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.button-white {
+  background-color:white;
+  border: none;
+  border-radius: 5px;
+  color: #540B51;
+  padding: 20px 70px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 550;
+  text-transform: uppercase;
+  margin: 4px 10px;
+}
+
+.button-blue {
+  background-color: #4285F4;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 20px 70px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 550;
+  text-transform: uppercase;
+  margin: 4px 10px;
+  position: relative;
+}
+
+header button img {
+  height: 35px;
+  background-color: white;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 10px;
+}
+
+header > div > img {
+  width: 100%;
+  margin-top: 30px;
+}
+
+
+/* 2nd section: */
+
+main {
+  background-color: #F3EAE2;
+}
+
+.companies-trusted {
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 560;
+}
+
+.companies-logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  padding: 1rem;
+}
+
+.companies-logo img {
+  width: 80px;
+  height: 70px;
+  object-fit: contain; /*no matter how the width or the height is, the logo is contained within them, without distorting it*/
+  mix-blend-mode: multiply; /* gets a transparent version of the logo */
+}
+
+/* Falta por alguns logos mais pequenos que outros  */
+
+.picture-left {
+  width: 90%;
+  margin: 1rem 2rem 1rem 0;
+}
+
+.picture-right {
+  width: 90%;
+  margin: 1rem 0 1rem 4rem;
+  text-align: right;
+  padding: 3rem 0;
+}
+
+@media (max-width: 768px) {
+  .section5, .section6, .section7, .section8 button  {
+      display: none;
+  }
+}
+
+
+.section8 {
+  background-color: white;
+  padding-bottom: 70px;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: 1rem;
+  text-align: center;
+  color: #540B51;
+  padding-top: 50px;
+}
+
+.p1 {
+  text-align: center;
+  
+}
+
+.section8 ul {
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  font-weight: 600;
+}
+
+li p span {
+  font-size: 3rem;
+  color: #540B51;
+}
+
+
+.section9 {
+  background-color: #540B51;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  text-align: center; /* Center the buttons */
+}
+
+.section9 h3 {
+  color: white;
+}
+
+
+.button-white2 {
+  background-color:white;
+  border: none;
+  border-radius: 5px;
+  color: #540B51;
+  padding: 20px 120px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 550;
+  text-transform: uppercase;
+  margin: 4px 10px;
+}
+
+.button-white2,
+.button-transparent {
+  margin: 10px; /* Add margin to separate the buttons */
+}
+
+.button-transparent {
+  background-color: transparent;
+  border: 2px solid white; /* Add a white border */
+  border-radius: 5px;
+  color: white;
+  padding: 20px 120px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 550;
+  text-transform: uppercase;
+  margin: 4px 10px;
+}
+
+
+@media (max-width: 768px) {
+  .slack-logo-footer {
+      display: none;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .why-slack, .product, .pricing, .company  {
+      display: none;
+  }
+}
+
+footer {
+  padding: 3rem 2rem;
+}
+
+.other-stuff {
+  border-top: 1px solid black;
+  padding: 3rem 2rem;
+  font-weight: 400px;
+  list-style: none;
+}
+
+
+ul.social {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  padding: 0 2rem;
+  list-style: none;
+}
+
+.other-stuff li {
+  color: black; /* Darker text color */
+  margin-right: 20px; /* Add space between each word */
+  font-weight: bold; }
+
